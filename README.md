@@ -59,12 +59,12 @@ Edit
 
 git clone https://github.com//chanidu73/Multi-Source-Weather-ETL-Dashboard.git
 cd multi-source-etl-dashboard
-###2. Install Dependencies
+### 2. Install Dependencies
 bash
 Copy
 Edit
 pip install -r requirements.txt
-###3. Configure Snowflake & API Keys
+### 3. Configure Snowflake & API Keys
 Set your Snowflake credentials and OpenWeatherMap API key in a .env or configuration file.
 
 Example:
@@ -78,12 +78,12 @@ SNOWFLAKE_ACCOUNT=your_account
 SNOWFLAKE_DATABASE=your_db
 SNOWFLAKE_SCHEMA=your_schema
 OPENWEATHER_API_KEY=your_api_key
-###4. Run the ETL Pipeline
+### 4. Run the ETL Pipeline
 bash
 Copy
 Edit
 python etl/run_weather_etl.py
-###5. Start Airflow (Optional for Orchestration)
+### 5. Start Airflow (Optional for Orchestration)
 bash
 Copy
 Edit
@@ -91,7 +91,7 @@ airflow db migrate
 airflow users create --username admin --role Admin --email admin@example.com --firstname Admin --lastname User --password admin
 airflow webserver --port 8080
 airflow scheduler
-###6. Start the Dashboard
+### 6. Start the Dashboard
 bash
 Copy
 Edit
